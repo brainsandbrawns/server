@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "API server",
+  "scripts": {
+    "start": "node lib/server",
+    "test": "npm run lint && istanbul cover tape ./test/_runner.js | tap-spec",
+    "lint": "semistandard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brainsandbrawns/server.git"
+  },
+  "author": "heron2014 and friends",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brainsandbrawns/server/issues"
+  },
+  "homepage": "https://github.com/brainsandbrawns/server#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "semistandard": "^9.0.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "hapi": "^15.0.3"
+  }
+}
